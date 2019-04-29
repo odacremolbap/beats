@@ -203,7 +203,7 @@ func Bool(key string, opts ...schema.SchemaOption) schema.Conv {
 
 func toInteger(key string, data map[string]interface{}) (interface{}, error) {
 	emptyIface, err := common.MapStr(data).GetValue(key)
-	if err != nil {
+	if err != nil || emptyIface == nil {
 		return 0, schema.NewKeyNotFoundError(key)
 	}
 	switch emptyIface.(type) {
