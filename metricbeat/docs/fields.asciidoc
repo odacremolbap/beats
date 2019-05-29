@@ -2392,6 +2392,16 @@ Name of the project in Google Cloud.
 
 --
 
+*`cloud.image.id`*::
++
+--
+example: ami-abcd1234
+
+Image ID for the cloud instance.
+
+
+--
+
 *`meta.cloud.provider`*::
 +
 --
@@ -2452,6 +2462,24 @@ alias to: cloud.project.id
 type: alias
 
 alias to: cloud.region
+
+--
+
+*`meta.cloud.account.id`*::
++
+--
+type: alias
+
+alias to: cloud.account.id
+
+--
+
+*`meta.cloud.image.id`*::
++
+--
+type: alias
+
+alias to: cloud.image.id
 
 --
 
