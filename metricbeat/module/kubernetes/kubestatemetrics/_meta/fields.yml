@@ -1,0 +1,5 @@
+- name: kubestatemetrics
+  type: group
+  description: kube-state-metrics data
+  release: beta
+  fields:
